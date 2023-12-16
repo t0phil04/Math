@@ -34,11 +34,11 @@ int main() {
     }
     else if (option == 2)
     {
-
+        cout << "test";
     }
     else if (option == 3)
     {
-
+        cout << "test";
     }
     else
     {

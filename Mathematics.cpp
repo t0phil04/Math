@@ -25,7 +25,7 @@ int MyMathOperations::EU_Algorithm(int dividend, int divisor) const {
 	return tmp_a;
 }
 
-std::vector<int> MyMathOperations::Trials_Division(int n) const{
+std::vector<int> MyMathOperations::Trials_Division(int n) const {
 	std::vector<int> Factors_;
 	int currentDivisor = 2;
 
@@ -35,16 +35,13 @@ std::vector<int> MyMathOperations::Trials_Division(int n) const{
 		std::cin >> n;
 	}
 
-	while (n > 1)
-	{
-		if (n % currentDivisor == 0)
-		{
+	while (n > 1) {
+		if (n % currentDivisor == 0) {
 			// Adds the current divisor where n is divisible by currentDivisor to the vector
 			Factors_.push_back(currentDivisor);
 			n = n / currentDivisor;
 		}
-		else
-		{
+		else {
 			currentDivisor++; // Increments the divisor by 1
 		}
 	}
